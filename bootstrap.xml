@@ -18,22 +18,20 @@
 
 <broker xmlns="http://activemq.apache.org/schema">
 
-   <jaas-security domain="activemq"/>
+    <jaas-security domain="activemq"/>
 
 
-   <!-- artemis.URI.instance is parsed from artemis.instance by the CLI startup.
-        This is to avoid situations where you could have spaces or special characters on this URI -->
-   <server configuration="file:/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/etc//broker.xml"/>
+    <!-- artemis.URI.instance is parsed from artemis.instance by the CLI startup.
+         This is to avoid situations where you could have spaces or special characters on this URI -->
+    <server configuration="file:${user.home}/dev/activemq-artemis-local-distro-deploy/mybroker/etc//broker.xml"/>
 
-   <!-- The web server is only bound to localhost by default -->
-   <web path="web" rootRedirectLocation="console">
-       <binding name="artemis" uri="http://localhost:8161">
-           <app name="branding" url="activemq-branding" war="activemq-branding.war"/>
-           <app name="plugin" url="artemis-plugin" war="artemis-plugin.war"/>
-           <app name="console" url="console" war="console.war"/>
-       </binding>
-   </web>
-
+    <!-- The web server is only bound to localhost by default -->
+    <web path="web" rootRedirectLocation="console">
+        <binding name="artemis" uri="http://localhost:8161">
+            <app name="branding" url="activemq-branding" war="activemq-branding.war"/>
+            <app name="plugin" url="artemis-plugin" war="artemis-plugin.war"/>
+            <app name="console" url="console" war="console.war"/>
+        </binding>
+    </web>
 
 </broker>
-

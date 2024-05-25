@@ -47,7 +47,7 @@ fi
 HAWTIO_ROLE="NO_HAWTIO_ROLE"
 
 # Load Profile Data
-ARTEMIS_INSTANCE_ETC='/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/etc'
+ARTEMIS_INSTANCE_ETC="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/etc"
 . "$ARTEMIS_INSTANCE_ETC/artemis.profile"
 
 
