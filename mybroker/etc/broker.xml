@@ -29,12 +29,12 @@ under the License.
         <name>0.0.0.0</name>
 
         <metrics>
-<!--            <jvm-memory>true</jvm-memory> &lt;!&ndash; defaults to true &ndash;&gt;-->
-<!--            <jvm-gc>true</jvm-gc> &lt;!&ndash; defaults to false &ndash;&gt;-->
-<!--            <jvm-threads>true</jvm-threads> &lt;!&ndash; defaults to false &ndash;&gt;-->
-<!--            <netty-pool>true</netty-pool> &lt;!&ndash; defaults to false &ndash;&gt;-->
-<!--            <file-descriptors>true</file-descriptors> &lt;!&ndash; defaults to false &ndash;&gt;-->
-<!--            <processor>true</processor> &lt;!&ndash; defaults to false &ndash;&gt;-->
+            <!--            <jvm-memory>true</jvm-memory> &lt;!&ndash; defaults to true &ndash;&gt;-->
+            <!--            <jvm-gc>true</jvm-gc> &lt;!&ndash; defaults to false &ndash;&gt;-->
+            <!--            <jvm-threads>true</jvm-threads> &lt;!&ndash; defaults to false &ndash;&gt;-->
+            <!--            <netty-pool>true</netty-pool> &lt;!&ndash; defaults to false &ndash;&gt;-->
+            <!--            <file-descriptors>true</file-descriptors> &lt;!&ndash; defaults to false &ndash;&gt;-->
+            <!--            <processor>true</processor> &lt;!&ndash; defaults to false &ndash;&gt;-->
             <uptime>true</uptime> <!-- defaults to false -->
             <plugin class-name="org.apache.activemq.artemis.core.server.metrics.plugins.SimpleMetricsPlugin"/>
         </metrics>

@@ -40,6 +40,9 @@ RELEASE=${1:-$(get_latest_tag)}
 # Set ARTEMIS_HOME based on the RELEASE version
 ARTEMIS_HOME="/Users/${current_user}/dev/activemq-artemis/artemis-distribution/target/apache-artemis-${RELEASE}-bin/apache-artemis-${RELEASE}"
 
+echo "Launching artemis..."
+echo "Executing '${ARTEMIS_HOME}/bin/artemis create mybroker'..."
+
 # Create the broker
 ${ARTEMIS_HOME}/bin/artemis create mybroker
 
