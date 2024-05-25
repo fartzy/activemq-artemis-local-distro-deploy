@@ -1,1 +1,4 @@
-   "/Users/martz/dev/activemq-artemis-local-distro-deploy/mybroker/bin/artemis-service" start
+#!/bin/zsh
+
+"/Users/$(whoami)/dev/activemq-artemis-local-distro-deploy/mybroker/bin/artemis-service" start
+   
