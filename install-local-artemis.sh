@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+REMINDER_MESSAGE = "Did you already run 'mvn -Pdev install' from the activemq-artemis directory?"
 # Function to fetch the latest tag from the GitHub repository and increment it
 get_latest_tag() {
   # Clone the repository or fetch the latest tags if already cloned
@@ -31,6 +32,7 @@ current_user=$(whoami)
 if [[ $# -gt 1 ]]; then
   echo "Usage: $0 [RELEASE]"
   echo "Example: $0 2.34.0-SNAPSHOT"
+  echo $REMINDER_MESSAGE
   exit 1
 fi
 
@@ -48,12 +50,12 @@ echo "Executing '${ARTEMIS_HOME}/bin/artemis create mybroker'..."
 ${ARTEMIS_HOME}/bin/artemis create mybroker
 
 # Copy configuration files
-cp broker.xml mybroker/etc/
-cp management.xml mybroker/etc/
-cp bootstrap.xml mybroker/etc/
-cp log4j2.properties mybroker/etc/
-cp artemis.profile mybroker/etc/
+#cp broker.xml mybroker/etc/
+#cp management.xml mybroker/etc/
+#cp bootstrap.xml mybroker/etc/
+#cp log4j2.properties mybroker/etc/
+#cp artemis.profile mybroker/etc/
 cp artemis mybroker/bin/
-cp login.config mybroker/etc/
-cp artemis-roles.properties mybroker/etc/
-cp artemis-users.properties mybroker/etc/
+#cp login.config mybroker/etc/
+#cp artemis-roles.properties mybroker/etc/
+#cp artemis-users.properties mybroker/etc/
