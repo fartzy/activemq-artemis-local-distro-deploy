@@ -15,17 +15,17 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ARTEMIS_HOME='/Users/mikeartz/dev/activemq-artemis/artemis-distribution/target/apache-artemis-2.31.0-SNAPSHOT-bin/apache-artemis-2.31.0-SNAPSHOT'
-ARTEMIS_INSTANCE='/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker'
-ARTEMIS_DATA_DIR='/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/data'
-ARTEMIS_ETC_DIR='/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/etc'
-ARTEMIS_OOME_DUMP='/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/log/oom_dump.hprof'
+ARTEMIS_HOME=${ARTEMIS_HOME}
+ARTEMIS_INSTANCE="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker"
+ARTEMIS_DATA_DIR="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/data"
+ARTEMIS_ETC_DIR="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/etc"
+ARTEMIS_OOME_DUMP="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/log/oom_dump.hprof"
 
 # The logging config will need an URI
 # this will be encoded in case you use spaces or special characters
 # on your directory structure
-ARTEMIS_INSTANCE_URI='file:/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/'
-ARTEMIS_INSTANCE_ETC_URI='file:/Users/mikeartz/dev/activemq-artemis-local-distro-deploy/mybroker/etc/'
+ARTEMIS_INSTANCE_URI="file:$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/"
+ARTEMIS_INSTANCE_ETC_URI="file:$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/etc/"
 
 # Cluster Properties: Used to pass arguments to ActiveMQ Artemis which can be referenced in broker.xml
 #ARTEMIS_CLUSTER_PROPS="-Dactivemq.remoting.default.port=61617 -Dactivemq.remoting.amqp.port=5673 -Dactivemq.remoting.stomp.port=61614 -Dactivemq.remoting.hornetq.port=5446"

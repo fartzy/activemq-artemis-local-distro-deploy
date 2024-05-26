@@ -15,7 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ARTEMIS_HOME="$HOME/dev/activemq-artemis/artemis-distribution/target/apache-artemis-2.31.0-SNAPSHOT-bin/apache-artemis-2.31.0-SNAPSHOT"
+ARTEMIS_HOME=${ARTEMIS_HOME}
 ARTEMIS_INSTANCE="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker"
 ARTEMIS_DATA_DIR="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/data"
 ARTEMIS_ETC_DIR="$HOME/dev/activemq-artemis-local-distro-deploy/mybroker/etc"
